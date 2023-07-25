@@ -1,0 +1,12 @@
+.image-room {
+  width: 45%;
+}
+
+.image {
+  border: 1px solid #e2a31d;
+  cursor: pointer;
+}
+
+.room-list {
+  list-style: none;
+}

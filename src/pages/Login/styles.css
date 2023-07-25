@@ -1,0 +1,14 @@
+.form-container {
+  height: 90vh;
+}
+
+.form {
+  border: 1px solid #000;
+  width: 40%;
+}
+
+.button {
+  background-color: #e2a007;
+  border: 1px solid #fff;
+  color: #fff;
+}

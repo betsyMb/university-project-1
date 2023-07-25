@@ -1,0 +1,24 @@
+.header {
+  top: 0px;
+  background-color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #000000;
+  transition: color 300ms ease;
+}
+
+.nav-link:hover {
+  color: #e2a007;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #e2a007;
+}
