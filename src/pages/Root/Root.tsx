@@ -11,13 +11,13 @@ export default function Root() {
   return (
     <MainTemplate>
       <>
-        {" "}
-        {/* <h1 className="text-center my-4">Hotel Industrial Genesis</h1> */}
+        <div id="top"></div> {/* <h1 className="text-center my-4">Hotel Industrial Genesis</h1> */}
         <div className="d-flex justify-content-evenly">
           <img src={fachada_completa} className="w-100" height="650" />
         </div>
+        <div id="aboutUs" className="mb-4"></div>
         {/* About Ud */}
-        <section className="text-center px-5" id="aboutUs">
+        <section className="text-center px-5">
           <h3 className="my-3">Acerca de Nosotros</h3>
           <article className="d-flex flex-column">
             <p className="p-1">
@@ -32,6 +32,7 @@ export default function Root() {
           </article>
         </section>
         {/* Rooms */}
+        <div id="habitaciones"></div>
         <Rooms />
         {/* Social Media */}
         <SocialMedia />

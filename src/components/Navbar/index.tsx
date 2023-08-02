@@ -26,11 +26,11 @@ type Props = {
 
 const navLinks: NavLinks[] = [
   {
-    to: "/",
+    to: "/#top",
     title: "Inicio",
   },
-  { to: "/#habitaciones", title: "Habicationes" },
   { to: "/#aboutUs", title: "Acerca de Nosotros" },
+  { to: "/#habitaciones", title: "Habicationes" },
   { to: "/#contactUs", title: "Contactanos" },
 ];
 
@@ -55,13 +55,19 @@ export default function Navbar({ status }: Props) {
                 {navLinks.map((link, index) => (
                   <React.Fragment key={`${link.to}-${index}`}>
                     <li className="nav-item">
-                      <Link
+                      {/* <Link
                         className={`nav-link ${`${router.pathname}${router.hash}` === link.to && "active"}`}
                         aria-current="page"
                         to={link.to}
                       >
                         {link.title}
-                      </Link>
+                      </Link> */}
+                      <a
+                        href={link.to}
+                        className={`nav-link ${`${router.pathname}${router.hash}` === link.to && "active"}`}
+                      >
+                        {link.title}
+                      </a>
                     </li>
                   </React.Fragment>
                 ))}

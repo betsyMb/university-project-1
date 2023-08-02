@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function Rooms() {
   const navegate = useNavigate();
   return (
-    <section id="habitaciones">
+    <section >
       <h3 className="text-center my-4">Habitaciones</h3>
       <div className="d-flex flex-column align-items-center gap-5">
         <div className="d-flex gap-2 justify-content-center align-items-center">
